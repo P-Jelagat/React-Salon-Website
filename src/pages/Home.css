@@ -1,0 +1,231 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.home-about{
+    display: flex;
+}
+
+.stacked-divs{
+    flex: 1;
+    margin-top: 2em;
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+    align-self: flex-end;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.first-div{
+    height: 80vh;
+    width: 55%;
+    position: absolute;
+    z-index: 400;
+    left: 8.5em;
+}
+
+.first-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.second-div{
+    background: #deb887;
+    height: 80vh;
+    width: 55%;
+    position: absolute; 
+    top: 14px;
+    left: 7.2em;
+    z-index: 300;
+}
+
+.third-div{
+    background: #cfa09d;
+    height: 80vh;
+    width: 55%;
+    position: absolute;  
+    top: 0px; 
+    left: 6.2em;
+    z-index: 200;
+}
+
+.fourth-div{
+    background: #d7a67e;
+    height: 80vh;
+    width: 55%;
+    position: absolute;
+    top: -14px; 
+    left: 5.2em;
+}
+
+.home-about-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 3em;
+}
+
+.home-about-text h3 {
+    font-size: 2.2em;
+    color: #a17873;
+    text-shadow: 3px 10px 3px #b5b4b4;
+}
+
+.home-about-text p {
+    color: #666;
+    font-size: large;
+}
+
+.home-about-cta{
+    margin: 2em 1em;
+}
+
+.home-about-cta button{
+    padding: 20px;
+    margin-right: 2.2em;
+    font-size: 1.1em;
+    border: 1px solid #2B203A;
+    border-radius: 2px; 
+    box-shadow: 8px 10px 5px rgba(0,0,0,0.25);
+    transition: 0.2s ease;  
+}
+
+.primary{
+    background: #2B203A;
+    color: #faf5ed;
+    font-weight: bold;
+}
+
+.primary:active{
+    opacity: 0.5;
+}
+
+.generic{
+    background: none;
+}
+
+.generic:active{
+   background:#2B203A;
+   color: #faf5ed;
+}
+
+
+.home-about-carousel {
+    overflow: hidden;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.carousel-cards {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+
+    animation: scrollCarousel 60s linear infinite;
+}
+
+.carousel-cards article {
+    width: 300px;
+    height: 350px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-cards article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-card-text {
+    height: 100%;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #2B203A;
+    color: white;
+}
+
+.carousel-card-text h4{
+    font-size: 2em;
+}
+
+@keyframes scrollCarousel {
+
+    from{ 
+        transform: translatex(0);
+    }
+
+    to { 
+        transform: translateX(-50%);
+    }
+}
+
+
+@media(hover:hover){
+    .primary:hover{
+        transform: scale(1.05);
+        color: #ffffff;
+        text-shadow: 0 0 10px  rgba(250, 245, 237, 0.5s);
+    }
+    .generic:hover{
+        transform: translateY(-6px);
+        font-size: 1.15em;
+    }
+}
+
+@media(max-width:950px){
+    .home-about{
+        display: block;
+    }
+    .home-about-text{
+        padding: 0 3em;
+        padding-bottom: 1em;
+    }
+
+    .home-about-text h3{
+        font-size: 1.9em;
+    }
+
+    .home-about-text p{
+        font-size: medium;
+    }
+
+    .home-about-cta{
+        margin: .5em;
+    }
+
+    .home-about-cta button{
+        padding: 15px;
+        font-size: 1em;
+        margin-top: 20px;
+    }
+
+    @media(hover:hover){
+
+        .generic:hover{
+            font-size: 1.05em;
+        }
+   }
+
+}
+
+@media(max-width:600px){
+    .stacked-divs{
+        display: none;
+    }
+    .home-about-cta button{
+        padding: 10px;
+        font-size: 1em;
+        margin-top: 20px;
+    }
+}
