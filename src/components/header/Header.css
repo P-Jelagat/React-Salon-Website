@@ -70,6 +70,8 @@
     text-decoration: none;
     color: #ffffff;
     transition: 0.2s ease;
+    font-size: large;
+    font-weight: bold;
 }
 
 .nav-links a:active{
@@ -116,7 +118,8 @@
 .menu-nav-links a{
     text-decoration: none;
     color: #251515;
-    transition: 0.2s ease;   
+    transition: 0.2s ease; 
+    font-weight: bold;  
 }
 
 .menu-nav-links a:active{
@@ -139,7 +142,7 @@
     }
 
     .header button:hover{
-        transform: translateY(-8px);
+        transform: translateY(-5px);
         color: #f0ffff;
         border-color: #f0ffff;
         text-shadow: 0 0 10px #f0ffff;

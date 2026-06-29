@@ -3,28 +3,35 @@ import placeholderIcon from "../../assets/icons/placeholder.png";
 import emailIcon from "../../assets/icons/email.png"; 
 import logo from "../../assets/icons/logo.png"; 
 import menuButton from "../../assets/icons/more.png";
-import { useState, useRef, useEffect } from "react"; 
+import { useState, useRef, useEffect } from "react";
+ 
 
 function Header () {
   // tracks whether menu is open
   const [menuOpen, setMenuOpen] = useState(false);
 
   function openMenu (){
-    setMenuOpen(!menuOpen);
+    setMenuOpen(menuOpen => !menuOpen);
   }
 
   // closes menu when you click anywhere outside the menu.
-  // const menuRef = useRef(null);
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
 
-  // useEffect(()=> {
-  //    function handleClick(event) {
-  //      if (menuRef.current && !menuRef.current.contains(event.target))
-  //      {setMenuOpen(false);}
-  //    }
+  useEffect(()=> {
+     function handleClick(event) {
+       if (menuRef.current && 
+        buttonRef.current &&
+        !menuRef.current.contains(event.target) && 
+        !buttonRef.current.contains(event.target))
+       {
+        setMenuOpen(false);
+       }
+     }
 
-  //    document.addEventListener('click', handleClick);
-  //    return () => {document.removeEventListener('click', handleClick)};
-  // },[]);
+     document.addEventListener('click', handleClick);
+     return () => {document.removeEventListener('click', handleClick)};
+  },[]);
   
 
   return(
@@ -42,6 +49,7 @@ function Header () {
 
             <div>
                 <a href="#" 
+                 ref={buttonRef}
                  onClick={(e) => {e.preventDefault(), openMenu()}} 
                  className="menu-button">
                   <img src={menuButton} alt="" />
@@ -62,7 +70,7 @@ function Header () {
         </div>
 
         <div 
-        //  ref={menuRef}
+         ref={menuRef}
          className={`menu ${menuOpen ? "open" : ""}`}>
             <div className="menu-nav-links">
               <a href="">Home</a>
