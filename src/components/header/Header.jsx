@@ -14,11 +14,12 @@ function Header () {
     setMenuOpen(menuOpen => !menuOpen);
   }
 
-  // closes menu when you click anywhere outside the menu.
+
   const menuRef = useRef(null);
   const buttonRef = useRef(null);
 
   useEffect(()=> {
+      // closes menu when you click anywhere outside the menu.
      function handleClick(event) {
        if (menuRef.current && 
         buttonRef.current &&
@@ -32,6 +33,29 @@ function Header () {
      document.addEventListener('click', handleClick);
      return () => {document.removeEventListener('click', handleClick)};
   },[]);
+
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+   
+    function handleScroll(){
+
+      if(window.scrollY > 100){
+        setScrolled(true);
+      }else{
+        setScrolled(false);
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+
+  },[]);
+
   
 
   return(
@@ -43,7 +67,7 @@ function Header () {
           <a href="mailto:patiencejelagatt@gmail.com"><img src={emailIcon} alt="" />palalume@gmail.com</a>
         </div>
 
-        <div className="nav-bar">
+        <div className={`nav-bar ${scrolled ? "scrolled" : ""}`}>
 
             <div className="logo"><img src={logo} alt="" /></div>
 
