@@ -1,6 +1,7 @@
 import Hero from "../components/hero/Hero";
 import "./Home.css"
 import homeAboutImage from "../assets/images/adrian-fernandez-t1jlLrsMpjc-unsplash.jpg"
+import homeHeroImage from "../assets/images/jessica-felicio-_cvwXhGqG-o-unsplash (1).jpg"
 
 function HomeAbout(){
     return(
@@ -109,7 +110,12 @@ function Home (){
     return(
         <div className="home-container">
 
-         <Hero />
+         <Hero 
+           heroImage={homeHeroImage}
+           heroHeight={{height: "80vh"}}
+           heading={"Curly Naturals' Haven"}
+           paragraph={"Where Healthy Hair is Achieved and Maintained Through Expert Care"}
+         />
          <HomeAbout />
          <Carousel />
           
