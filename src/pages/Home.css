@@ -4,6 +4,20 @@
     gap: 4em;
 }
 
+.home-hero .hero-image{
+    height: 80vh;
+}
+
+.home-hero .hero-overlay-text{
+    color: #dbdada;
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 10px;
+}
+
 .home-about{
     display: flex;
 }

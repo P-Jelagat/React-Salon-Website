@@ -6,10 +6,9 @@ function About(){
     return(
         <div className="about-container">
              <Hero 
+             className={"about-hero"}
                buttonDisplay={{display: "none"}} 
                heroImage={aboutHeroImage}
-               heroHeight={{height: "70vh"}}
-               overlayHeight={{height: "70vh"}}
                heading= "About Us"
              />
         </div>

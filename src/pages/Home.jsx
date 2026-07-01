@@ -111,9 +111,8 @@ function Home (){
         <div className="home-container">
 
          <Hero 
+         className={"home-hero"}
            heroImage={homeHeroImage}
-           heroHeight={{height: "80vh"}}
-           overlayHeight={{height: "80vh"}}
            heading={"Curly Naturals' Haven"}
            paragraph={"Where Healthy Hair is Achieved and Maintained Through Expert Care"}
          />

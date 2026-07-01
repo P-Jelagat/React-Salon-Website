@@ -1,0 +1,15 @@
+.about-hero .hero-image{
+    height: 55vh;
+}
+
+.about-hero .hero-overlay{
+    background: rgba(0,0,0,0.4) ;
+}
+
+.about-hero .hero-overlay-text{
+    height: 50%;
+    width: 100%;
+    font-size: 3em;
+    color: #dbdada;
+    padding-left: 1em;
+}

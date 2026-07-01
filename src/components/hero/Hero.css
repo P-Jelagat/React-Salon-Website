@@ -25,7 +25,7 @@
     align-items: flex-end;
 }
 
-.hero-overlay-text{
+/* .hero-overlay-text{
     color: #dbdada;
     width: 50%;
     height: 40%;
@@ -33,7 +33,7 @@
     flex-direction: column;
     gap: 1em;
     padding: 10px;
-}
+} */
 
 .hero-overlay-text button{
     padding: 15px 5px;
