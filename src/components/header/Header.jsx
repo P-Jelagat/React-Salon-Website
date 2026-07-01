@@ -4,6 +4,7 @@ import emailIcon from "../../assets/icons/email.png";
 import logo from "../../assets/icons/logo.png"; 
 import menuButton from "../../assets/icons/more.png";
 import { useState, useRef, useEffect } from "react";
+import {Link} from "react-router-dom";
  
 
 function Header () {
@@ -81,12 +82,12 @@ function Header () {
             </div>
 
             <div className="nav-links">
-              <a href="">Home</a>
-              <a href="">About</a>
-              <a href="">Gallery</a>
-              <a href="">Services</a>
-              <a href="">Shop</a>
-              <a href="">Contact</a>
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/about">Gallery</Link>
+                <Link to="/about">Services</Link>
+                <Link to="/about">Shop</Link>
+                <Link to="/about">Contact</Link>
             </div>
 
             <button>Book Appointment</button>
@@ -97,12 +98,24 @@ function Header () {
          ref={menuRef}
          className={`menu ${menuOpen ? "open" : ""}`}>
             <div className="menu-nav-links">
-              <a href="">Home</a>
-              <a href="">About</a>
-              <a href="">Gallery</a>
-              <a href="">Services</a>
-              <a href="">Shop</a>
-              <a href="">Contact</a>
+                <Link to="/" onClick={() => setMenuOpen(false)}>
+                  Home
+                </Link>
+                <Link to="/About" onClick={() => setMenuOpen(false)}>
+                  About
+                </Link>
+                <Link to="/Gallery" onClick={() => setMenuOpen(false)}>
+                  Gallery
+                </Link>
+                <Link to="/Services" onClick={() => setMenuOpen(false)}>
+                  Services
+                </Link>
+                <Link to="/Shop" onClick={() => setMenuOpen(false)}>
+                  Shop
+                </Link>
+                <Link to="/Contact" onClick={() => setMenuOpen(false)}>
+                  Contact
+                </Link>
             </div>
         </div>
 

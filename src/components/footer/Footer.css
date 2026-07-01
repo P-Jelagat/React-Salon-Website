@@ -43,8 +43,7 @@ footer{
     gap: 10px;   
 }
 
-.quick-links a,
-.quick-links-icons{
+.quick-links a{
     margin-left: 1em;
     transition: 0.1s ease;
 }
@@ -53,6 +52,20 @@ footer{
     color: #08082c;
 }
 
+.quick-links-icons{
+    margin-top: 1em;
+}
+
+.copyright{
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: large;
+}
+
+.copyright a{
+    color: #f9eee0;
+}
 
 @media(hover:hover){
     .quick-links a:hover{

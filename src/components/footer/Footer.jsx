@@ -2,6 +2,9 @@ import "./Footer.css"
 import locationIcon from "../../assets/icons/placeholder.png"
 import phoneIcon from "../../assets/icons/call.png"
 import emailIcon from "../../assets/icons/email.png"
+import instagramIcon from "../../assets/icons/instagram (1).png"
+import linkedinIcon from "../../assets/icons/linkedin.png"
+import xIcon from "../../assets/icons/logos.png"
 
 function Footer (){
 
@@ -27,9 +30,9 @@ function Footer (){
                     <a href="">Contact Us</a>
 
                     <div className="quick-links-icons">
-                        <img src={locationIcon} alt="" />
-                        <img src={locationIcon} alt="" />
-                        <img src={locationIcon} alt="" />
+                        <a href="https://www.instagram.com/patience.jelagat"><img src={instagramIcon} alt="" /></a>
+                        <a href="https://www.linkedin.com/in/patience-jelagat-5632aa348/"><img src={linkedinIcon} alt="" /></a>
+                        <a href="https://x.com/PJelagat617"><img src={xIcon} alt="" /></a>
                     </div>
                 </div>
 
@@ -37,7 +40,12 @@ function Footer (){
                     <h4>Services and Inquiry CTA</h4>
                 </div>
 
-            </div>
+            </div> <hr />
+
+                <div className="copyright">
+                    <p>&copy; 2026 Pala Lume. All rights reserved </p>
+                    <p>Website by <a href="#" className="dev-contact">Patience Jelagat</a></p>
+                 </div>
         </footer>
     );
 
