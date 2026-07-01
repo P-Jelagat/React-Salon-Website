@@ -2,8 +2,7 @@ import "./Hero.css";
 // import HomeheroImage from "../../assets/images/jessica-felicio-_cvwXhGqG-o-unsplash (1).jpg"
 
 function Hero ( {
-    buttonDisplay, heading, paragraph, 
-    heroImage, overlayOpacity, heroHeight }){
+    buttonDisplay, heading, paragraph, heroImage, heroHeight,  }){
 
 
 //    return(
@@ -35,8 +34,8 @@ function Hero ( {
             <img src={heroImage}alt="" />
         </div>
 
-        <div className="hero-overlay" style={overlayOpacity}>
-            <div className="hero-overlay-text">
+        <div className="hero-overlay" >
+            <div className="hero-overlay-text" >
                 <h2>{heading}</h2>
                 <p>{paragraph}</p>
                 <button style={buttonDisplay}>Explore Services</button>
