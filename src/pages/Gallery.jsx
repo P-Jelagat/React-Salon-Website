@@ -5,7 +5,7 @@ import galleryHero from "../assets/images/guilherme-petri-PtOfbGkU3uI-unsplash.j
 
 import { useState } from "react";
 
-const images = import.meta.glob("../assets/images/*.{png}", {
+const images = import.meta.glob("../assets/images/*.png", {
     eager: true,
     import: "default"
 });
@@ -17,72 +17,72 @@ function GalleryContent(){
         const hairstyles = [
             {
                 id: 1,
-                image: images["../assets/images/twist1.jpg"],
+                image: images["../assets/images/twist1.png"],
                 category: "Twists"
             },
             {
                 id: 2,
-                image: "/images/twists2.jpg",
+                image: images["../assets/images/twists2.png"],
                 category: "Twists"
             },
             {
                 id: 3,
-                image:"/images/twists3.jpg",
+                image: images["../assets/images/twists3.png"],
                 category: "Twists"
             },
             {
                 id: 4,
-                image: "/images/twists4.jpg",
+                image: images["../assets/images/twists4.png"],
                 category: "Twists"
             },
             {
                 id: 5,
-                image: "/images/braids1.jpg",
+                image: images["../assets/images/braids1.png"],
                 category: "Braids"
             },
             {
                 id: 6,
-                image: "/images/braids2.jpg",
+                image: images["../assets/images/braids2.png"],
                 category: "Braids"
             },
             {
                 id: 7,
-                image: "/images/braids3.jpg",
+                image: images["../assets/images/braids3.png"],
                 category: "Braids"
             },
             {
                 id: 8,
-                image: "/images/braids4.jpg",
+                image: images["../assets/images/braids4.png"],
                 category: "Braids"
             },
             {
                 id: 9,
-                image: "/images/locs1.jpg",
+                image: images["../assets/images/locs1.png"],
                 category: "Locks"
             },
             {
                 id: 10,
-                image:"/images/locs2.jpg",
+                image: images["../assets/images/locs2.png"],
                 category: "Locks"
             },
             {
                 id: 11,
-                image: "/images/locs3.jpg",
+                image: images["../assets/images/locs3.png"],
                 category: "Locks"
             },
             {
                 id: 12,
-                image: "/images/blowout1.jpg",
+                image: images["../assets/images/blowout1.png"],
                 category: "Blowout"
             },
             {
                 id: 13,
-                image: "/images/blowout2.jpg",
+                image: images["../assets/images/blowout2.png"],
                 category: "Blowout"
             },
             {
                 id: 14,
-                image: "/images/blowout3.jpg",
+                image: images["../assets/images/blowout3.png"],
                 category: "Blowout"
             }
         ];
@@ -123,7 +123,7 @@ function GalleryContent(){
                         {[...styles, ...styles, ...styles].map((style, index) => (
                             <button
                                 key={index}
-                                onClick={() => setSelectedCategory("")}
+                                onClick={() => setSelectedCategory(style)}
                             >
                                 {style}
                             </button>
