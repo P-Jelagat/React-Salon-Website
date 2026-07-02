@@ -1,0 +1,62 @@
+.gallery-hero .hero-overlay{
+    background: rgba(0,0,0,0.5);
+}
+
+.gallery-hero .hero-image{
+    height: 60vh;
+}
+
+.gallery-hero .hero-image img{
+    object-position: top;
+}
+
+.gallery-hero .hero-overlay-text{
+    font-size: 3em;
+    color: #dbdada;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.search{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.search-text p{
+    font-size: 2em;
+}
+
+.input{
+    display: flex;
+    gap: 1em;
+    width: 80%;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.input input{
+    flex-grow: 1;
+    padding-left: 5px;
+    max-width: 500px;
+}
+
+.search-button{
+    background: none;
+    border: none;
+}
+
+.search-button img{
+    height: 35px;
+    width: 35px;
+}
+
+.search-options{
+    display: flex;
+    margin: 1em;
+    align-items: center;
+    gap: .5em;
+}
