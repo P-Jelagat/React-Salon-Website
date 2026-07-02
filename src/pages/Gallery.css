@@ -121,6 +121,8 @@
     }
 }
 
-.options-track:hover{
-    animation-play-state: paused;
+@media(hover:hover){
+    .options-track:hover{
+        animation-play-state: paused;
+    }
 }
