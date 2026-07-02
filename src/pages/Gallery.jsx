@@ -14,6 +14,8 @@ function GalleryContent(){
 
     const [selectedCategory, setSelectedCategory] = useState("All");
 
+    const [search, setSearch] = useState("");
+
         const hairstyles = [
             {
                 id: 1,
@@ -109,7 +111,12 @@ function GalleryContent(){
                 </div>
 
                 <div className="input">
-                    <input type="text" placeholder="'twists, braids, locks...'"/>
+                    <input 
+                        type="text" 
+                        value={search} onChange={ (e)=>setSearch(e.target.value)}
+                        placeholder="'twists, braids, locks...'"
+                      
+                    />
                     <button className="search-button"><img src={searchIcon} alt="" /></button>
                 </div>
             </div>
