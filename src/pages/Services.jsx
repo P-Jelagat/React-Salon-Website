@@ -6,6 +6,7 @@ const images = import.meta.glob("../assets/images/*.png",{
     eager:true,
     import: "default"
 });
+import reloadIcon from "../assets/icons/reload.png"
 
 
 
@@ -159,7 +160,7 @@ function ServiceInfo({ serviceImage, serviceName, description, price }) {
             <div className="service-card-info">
                 <h3>{serviceName}</h3>
                 <p>{description}</p>
-                <p>{price}</p>
+                <strong>{price}</strong>
 
                 <button>Book</button>
             </div>
@@ -210,9 +211,10 @@ const filteredServices =
 
                 <div className="service-info-container">
                         <button
+                            className="reload"
                             onClick={() => setSelectedCategory("All")}
                         >
-                            Reset
+                            Refresh <img src={reloadIcon} alt="" />
                         </button>
 
                         <div className="service-info">
