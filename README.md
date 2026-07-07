@@ -54,12 +54,19 @@ src/
 
 **Patience Jelagat**
 
-GitHub: [https://github.com/P-Jelagat](https://github.com/P-Jelagat/)
+GitHub: https://github.com/P-Jelagat/
 
-Portfolio: [YOUR_PORTFOLIO_LINK](https://portfolio-murex-two-75.vercel.app/)
+Portfolio: https://portfolio-murex-two-75.vercel.app/
 
-LinkedIn: [YOUR_LINKEDIN](https://www.linkedin.com/in/patience-jelagat-5632aa348/)
+LinkedIn: https://www.linkedin.com/in/patience-jelagat-5632aa348/
 
 ## License
 
 This project is licensed under the MIT License.
+
+## Screenshot
+<img width="1443" height="3350" alt="pala-lume vercel app_" src="https://github.com/user-attachments/assets/aeaf741e-1f79-4e51-af50-88b520f82bb4" />
+
+## Live Demo
+link: https://pala-lume.vercel.app/
+
