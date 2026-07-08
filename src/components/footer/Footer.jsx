@@ -5,6 +5,7 @@ import emailIcon from "../../assets/icons/email.png"
 import instagramIcon from "../../assets/icons/instagram (1).png"
 import linkedinIcon from "../../assets/icons/linkedin.png"
 import xIcon from "../../assets/icons/logos.png"
+import { Link } from "react-router-dom"
 
 function Footer (){
 
@@ -22,12 +23,12 @@ function Footer (){
 
                 <div className="quick-links">
                     <h4>Quick-Links</h4>
-                    <a href="#">Home</a>
-                    <a href="">About Us</a>
-                    <a href="">Services</a>
-                    <a href="">Gallery</a>
-                    <a href="">Shop</a>
-                    <a href="">Contact Us</a>
+                    <Link to="/home">Home</Link>
+                    <Link to="/about">About Us</Link>
+                    <Link to="/services">Services</Link>
+                    <Link to="/gallery">Gallery</Link>
+                    <Link to="/contact">Contact Us</Link>
+
 
                     <div className="quick-links-icons">
                         <a href="https://www.instagram.com/patience.jelagat"><img src={instagramIcon} alt="" /></a>

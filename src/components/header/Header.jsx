@@ -90,9 +90,8 @@ function Header () {
             </div>
 
            
-                 <button className="book-button">Book Appointment</button>
+            <Link className="book-button" to="/services">Book Appointment</Link>
     
-
         </div>
 
         <div 

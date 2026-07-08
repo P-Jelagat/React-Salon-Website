@@ -30,6 +30,7 @@
 .nav-bar{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     width: 100%;
     padding: 10px;
     position: fixed;
@@ -87,16 +88,17 @@
 }
 
 .book-button{
-    padding: 5px 10px;
-    font-size: 1em;
+
+    text-decoration: none;
     color: #eae9e9;
     background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.2);
     border-radius: 2em;
-    cursor: pointer;
     transition: 0.2s ease;
+    
 }
 
 .book-button:active{
@@ -155,7 +157,7 @@
     opacity: 0.4;
 }
 
-.scrolled.nav-bar button{
+.scrolled .book-button{
     background: #040423;
 }
 
@@ -184,7 +186,7 @@
 
 @media(max-width:950px){
     .contact-band,
-    .nav-links, .header button{
+    .nav-links, .book-button{
         display: none;
     }
     .menu-button img{

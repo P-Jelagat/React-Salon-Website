@@ -128,6 +128,7 @@ function Home (){
            heroImage={homeHeroImage}
            heading={"Curly Naturals' Haven"}
            paragraph={"Where Healthy Hair is Achieved and Maintained Through Expert Care"}
+           linkedPage={"/services"}
          />
          <HomeAbout />
          <Carousel />

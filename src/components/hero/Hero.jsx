@@ -1,8 +1,8 @@
 import "./Hero.css";
-// import HomeheroImage from "../../assets/images/jessica-felicio-_cvwXhGqG-o-unsplash (1).jpg"
+import { Link } from "react-router-dom";
 
 function Hero ( {
-    buttonDisplay, heading, paragraph, className, heroImage }){
+    buttonDisplay, heading, paragraph, className, heroImage, linkedPage }){
 
 
    return(
@@ -16,7 +16,7 @@ function Hero ( {
             <div className="hero-overlay-text" >
                 <h2>{heading}</h2>
                 <p>{paragraph}</p>
-                <button style={buttonDisplay}>Explore Services</button>
+                <Link to={linkedPage} style={buttonDisplay} className="explore-services">Explore Services</Link>
 
             </div>
         </div>
