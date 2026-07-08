@@ -86,7 +86,7 @@
     color: #1b0b21;
 }
 
-.header button{
+.book-button{
     padding: 5px 10px;
     font-size: 1em;
     color: #eae9e9;
@@ -99,7 +99,7 @@
     transition: 0.2s ease;
 }
 
-.header button:active{
+.book-button:active{
     background: #040423;
 }
 
@@ -174,7 +174,7 @@
             0 0 20px #f6647c;
     }
 
-    .header button:hover{
+    .book-button:hover{
         transform: translateY(-5px);
         color: #f0ffff;
         border-color: #f0ffff;

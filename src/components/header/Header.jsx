@@ -86,11 +86,12 @@ function Header () {
                 <Link to="/about">About</Link>
                 <Link to="/gallery">Gallery</Link>
                 <Link to="/services">Services</Link>
-                {/* <Link to="/shop">Shop</Link> */}
                 <Link to="/contact">Contact</Link>
             </div>
 
-            <button>Book Appointment</button>
+           
+                 <button className="book-button">Book Appointment</button>
+    
 
         </div>
 
@@ -110,9 +111,7 @@ function Header () {
                 <Link to="/Services" onClick={() => setMenuOpen(false)}>
                   Services
                 </Link>
-                {/* <Link to="/Shop" onClick={() => setMenuOpen(false)}>
-                  Shop
-                </Link> */}
+
                 <Link to="/Contact" onClick={() => setMenuOpen(false)}>
                   Contact
                 </Link>

@@ -5,8 +5,11 @@ import homeHeroImage from "../assets/images/jessica-felicio-_cvwXhGqG-o-unsplash
 import cardImage1 from "../assets/images/leighann-blackwood-EUedgXxvTAs-unsplash.jpg"
 import cardImage2 from "../assets/images/ayo-ogunseinde-fjTP7Ybcal0-unsplash.jpg"
 import cardImage3 from "../assets/images/guilherme-petri-PtOfbGkU3uI-unsplash.jpg"
+import { Link } from "react-router-dom";
 
 function HomeAbout(){
+
+
     return(
         <div className="home-about">
 
@@ -28,8 +31,15 @@ function HomeAbout(){
                 <p>We strive to create a welcoming and relaxing environment where every appointment feels like a self-care experience. By focusing on healthy hair practices, quality products, and attention to detail, we help our clients maintain strong, beautiful hair while expressing their unique style with confidence.</p>
 
                  <div className="home-about-cta">
-                    <button className="generic">Learn More</button>
-                    <button className="primary">Book Appointment</button>
+                    <Link to="/about">
+                       <button className="generic"  >Learn More</button>
+                    </Link>
+                      
+                    <Link to="/services">
+                       <button  className="primary">Book Appointment</button>
+                    </Link>
+                    
+
                  </div>
 
             </div>
