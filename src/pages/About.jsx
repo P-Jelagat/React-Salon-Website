@@ -7,6 +7,7 @@ import thirdImage from "../assets/images/land-o-lakes-inc-UnSFmJCCrW0-unsplash.j
 import idea from "../assets/icons/idea.png"
 import observation from "../assets/icons/diagnosis.png"
 import achieved from "../assets/icons/benefit.png"
+import { Link } from "react-router-dom";
 
 
 function AboutContent(){
@@ -63,8 +64,8 @@ function AboutContent(){
         <div className="about-page-cta">
           <h3>Ready to have the Pala Lume experience?</h3>
            <div className="aboutPage-cta-buttons">
-             <button className="explore">Explore Services</button>
-             <button className="shop">Shop with Us</button>
+             <Link to="/services" className="explore">Explore Services</Link>
+             <Link to="/gallery" className="gallery">Visit Gallery</Link>
            </div>
         </div>
 

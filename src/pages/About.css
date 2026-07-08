@@ -93,7 +93,8 @@ section{
     gap: 3em;
 }
 
-.aboutPage-cta-buttons button{
+.explore,
+.gallery{
     padding: 22px 20px;
     font-size: 1.3em;
     transition: 0.2s ease;
@@ -101,6 +102,7 @@ section{
     border-radius: 3px;
     box-shadow: 10px 10px 5px rgba(0,0,0,0.25);
     cursor: pointer;
+    text-decoration: none;
 }
 
 .explore{
@@ -113,11 +115,12 @@ section{
     opacity: 0.4;
 }
 
-.shop{
+.gallery{
     background: none;
+    color: #040423;
 }
 
-.shop:active{
+.gallery:active{
     background: #040423;
     color: #faf5ed;
 
@@ -130,7 +133,7 @@ section{
         text-shadow: 0 0 10px #eaeaea;
     }
 
-    .shop:hover{
+    .gallery:hover{
         transform: scale(1.05);
         background: rgba(255,255,255,0.5);
     }
@@ -154,7 +157,8 @@ section{
         height: 63vh;
     }
 
-    .aboutPage-cta-buttons button{
+    .explore,
+    .gallery{
         font-size: medium;
         gap: .5em;
         padding: 18px;
@@ -184,7 +188,8 @@ section{
         font-size: 2em;
     }
 
-    .aboutPage-cta-buttons{
+    .explore,
+    .gallery{
         flex-direction: column;
         padding-bottom: 1.2em;
     }

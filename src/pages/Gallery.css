@@ -47,7 +47,6 @@
 .input-wrapper input{
     flex-grow: 1;
     padding-left: 5px;
-    max-width: 500px;
     box-shadow: 8px 10px 5px rgba(0,0,0,0.1);
     border: 1px solid rgba(0,0,0,0.5);
     border-radius: 2px;
